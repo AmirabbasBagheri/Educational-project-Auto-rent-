@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+
+
+@font-face {
+    font-family: Esteedad;
+    src: url(../css/fonts/Estedad-FD-Regular.woff2);
+}
+
+@theme {
+    --font-Esteedad: Esteedad;
+}

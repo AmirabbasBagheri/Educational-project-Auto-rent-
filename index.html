@@ -1,13 +1,106 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>auto-rent</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/output.css">
+  <title>AutoRent by amirabbasbagheri </title>
+</head>
+
+<body>
+  <!--#region wraper -->
+  <div class="font-Esteedad bg-[#f3f3f3]">
+    <!-- #region mobile header&menu-->
+    <div class="lg:hidden w-full bg-white/90 h-20 flex items-center gap-2 p-1 flex-row-reverse sticky top-0 ">
+      <!-- #region logo-->
+      <div class="w-[15%]"><img src="./src/images/Logo.png" alt=""></div>
+      <!-- #endregion logo-->
+      <!-- #region search-input-->
+      <div class="w-[70%] h-full relative flex items-center">
+        <svg class="absolute right-4 " width="16" height="18" viewBox="0 0 19 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.8761 1.5C4.80239 1.5 1.5 4.80239 1.5 8.8761C1.5 12.9498 4.80239 16.2522 8.8761 16.2522C12.9498 16.2522 16.2522 12.9498 16.2522 8.8761C16.2522 4.80239 12.9498 1.5 8.8761 1.5ZM0 8.8761C0 3.97397 3.97397 0 8.8761 0C13.7782 0 17.7522 3.97397 17.7522 8.8761C17.7522 13.7782 13.7782 17.7522 8.8761 17.7522C3.97397 17.7522 0 13.7782 0 8.8761Z"
+            fill="#727272" />
+          <path clip-rule="evenodd"
+            d="M17.2045 18.5651L14.0584 15.4193C13.7655 15.1264 13.7655 14.6515 14.0584 14.3586C14.3512 14.0657 14.8261 14.0657 15.119 14.3586L18.2651 17.5044C18.5581 17.7973 18.5581 18.2722 18.2652 18.5651C17.9723 18.858 17.4974 18.858 17.2045 18.5651Z"
+            fill="#727272" />
+        </svg>
+        <input class="w-full h-[70%] rounded-[10px] bg-[#f3f3f3] pl-4 pr-10 outline-0 placeholder:font-Esteedad"
+          type="search" placeholder="جست و جو">
+      </div>
+      <!-- #endregion search-input-->
+      <!-- #region menu&btn-->
+      <div class="w-[11%] flex items-center">
+        <!-- #region btn-->
+        <input type="checkbox" class="peer hidden" id="menu-open" />
+        <label class=" w-12 h-12 block" for="menu-open">
+          <svg viewBox="0 0 32 32" class="h-[3em] transition-transform duration-600 ease-in-out ">
+            <path class="line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+              fill="none" stroke="#656565" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="
+              transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+              stroke-dasharray: 12 63;" />
+
+            <path d="M7 16 27 16" fill="none" stroke="#505050" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2.8" class="transition-all duration-600 ease-in-out" />
+          </svg>
+        </label>
+
+        <!-- #endregion btn-->
+        <!-- #region menu-->
+        <div class="absolute w-full h-screen top-0 -right-full peer-checked:right-0 flex transition-all duration-300 ">
+          <!-- #region menu-content-->
+          <div class="min-w-[40vw] h-screen bg-[#f3f3f3] border border-black/10 py-6 px-2 box-border flex flex-col gap-4">
+            <!-- #region login-->
+            <div class="w-full h-10 py-2 rounded-[10px] text-white/90 text-center font-bold bg-[#194BF0] mx-auto line-clamp-1">
+            ورود/ثبت نام
+            </div>
+            <!-- #endregion login-->
+            <!-- #region navigator-->
+            <nav class="w-full h-fit flex flex-col gap-2.5 p-2">
+              <a href="">رزرو خودرو</a>
+              <a href="">خدمات ما</a>
+              <a href="">بلاگ</a>
+              <a href="">درباره ما</a>
+              <a href="">تماس با ما</a>
+            </nav>
+            <!-- #endregion navigator-->
+            <!-- #region close-menu-btn-->
+            <div class="w-[30%] bg-[#d3e3e3] py-1 flex justify-center rounded-xl text-end ">
+              <label for="menu-open">
+                <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_429_11083)">
+                    <path d="M7 7.00006L17 17.0001M7 17.0001L17 7.00006" stroke="#292929" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_429_11083">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </label>
+            </div>
+            <!-- #endregion close-menu-btn-->
+          </div>
+          <!-- #endregion menu-content-->
+          <!-- #region menu-close-aria-->
+          <label class="w-[60%] h-screen backdrop-blur-[1px]" for="menu-open"></label>
+          <!-- #endregion menu-close-aria-->
+        </div>
+        <!-- #endregion menu-->
+      </div>
+
+
+      <!-- #endregion menu-->
+    </div>
+    <!-- #endregion mobile header&menu-->
+  
+  </div>
+  <!--#endregion wraper-->
+</body>
+
 </html>
