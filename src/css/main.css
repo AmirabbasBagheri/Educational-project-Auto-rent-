@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
     font-family: Esteedad;
@@ -9,13 +10,37 @@
     font-family: Esteedad-regular;
     src: url(../css/fonts/Estedad-FD-Regular.woff2);
 }
+
 @font-face {
     font-family: Esteedad-semibold;
     src: url(../css/fonts/Estedad-FD-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: Esteedad-light;
+    src: url(../css/fonts/Estedad-FD-Light.ttf);
+}
+
+@font-face {
+    font-family: Badeen;
+    src: url(../css/fonts/BadeenDisplay-Regular.ttf);
+}
+
 @theme {
     --font-Esteedad: Esteedad;
     --font-Esteedad-regular: Esteedad-regular;
-    --font-Esteedad-semibold : Esteedad-semibold;
+    --font-Esteedad-semibold: Esteedad-semibold;
+    --font-Esteedad-light: Esteedad-light;
+    --font-Badeen: Badeen;
+}
+
+@layer utilities {
+    @media (min-width: 1024px) {
+        .text-stroke {
+            text-shadow: -1px 0 #0B2FA6,
+                0 1px #0B2FA6,
+                1px 0 #0B2FA6,
+                0 -1px #0B2FA6;
+        }
+    }
 }
