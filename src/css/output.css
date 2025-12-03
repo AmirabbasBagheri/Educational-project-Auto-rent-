@@ -2912,6 +2912,166 @@
       }
     }
   }
+  .is-invalid {
+    .input&::file-selector-button {
+      background-color: var(--color-error);
+      color: var(--color-error-content);
+      --input-color: var(--color-error);
+    }
+    .input-floating > .input&::file-selector-button {
+      background-color: var(--color-base-100);
+      color: var(--color-base-content);
+      border-inline-end: var(--border) solid var(--color-error);
+    }
+    .label-text:has(~ &) {
+      color: var(--color-error);
+    }
+    .label-text:has(~ * &) {
+      color: var(--color-error);
+    }
+    :is(&) ~ .helper-text {
+      color: var(--color-error);
+    }
+    *:has(&) ~ .helper-text {
+      color: var(--color-error);
+    }
+    :is(&) ~ .label-text {
+      color: var(--color-error);
+    }
+    :is(&) ~ .label-text * {
+      color: var(--color-error);
+    }
+    :is(&) ~ * >.label-text {
+      color: var(--color-error);
+    }
+    select& + .advance-select-toggle {
+      --input-color: var(--color-error);
+      &:focus, &:focus-within {
+        --input-color: var(--color-error);
+      }
+    }
+    .advance-select-tag:has(> &) {
+      --input-color: var(--color-error);
+      &:focus, &:focus-within {
+        --input-color: var(--color-error);
+      }
+    }
+    .input-floating:has(&) {
+      &:hover {
+        @media (hover: hover) {
+          border-color: var(--color-error);
+        }
+      }
+      .input-floating-label {
+        color: var(--color-error);
+      }
+      &:focus-within, &:not(:has(input:placeholder-shown)), &:has(.input:focus) {
+        .input-floating-label {
+          color: var(--color-error);
+        }
+      }
+    }
+    .textarea-floating:has(&) {
+      .textarea-floating-label {
+        color: var(--color-error);
+      }
+      &:focus-within, &:not(:has(textarea:placeholder-shown)), &:has(.textarea:focus) {
+        .textarea-floating-label {
+          color: var(--color-error);
+        }
+      }
+    }
+    .select-floating:has(&) {
+      .select-floating-label {
+        color: var(--color-error);
+      }
+      &:focus-within, &:not(:has(select:placeholder-shown)), &:has(.select:focus) {
+        .select-floating-label {
+          color: var(--color-error);
+        }
+      }
+    }
+  }
+  .is-valid {
+    .input&::file-selector-button {
+      background-color: var(--color-success);
+      color: var(--color-success-content);
+      --input-color: var(--color-success);
+    }
+    .input-floating > .input&::file-selector-button {
+      background-color: var(--color-base-100);
+      color: var(--color-base-content);
+      border-inline-end: var(--border) solid var(--color-success);
+    }
+    .label-text:has(~ &) {
+      color: var(--color-success);
+    }
+    .label-text:has(~ * &) {
+      color: var(--color-success);
+    }
+    :is(&) ~ .helper-text {
+      color: var(--color-success);
+    }
+    *:has(&) ~ .helper-text {
+      color: var(--color-success);
+    }
+    :is(&) ~ .label-text {
+      color: var(--color-success);
+    }
+    :is(&) ~ .label-text * {
+      color: var(--color-success);
+    }
+    :is(&) ~ * >.label-text {
+      color: var(--color-success);
+    }
+    select& + .advance-select-toggle {
+      --input-color: var(--color-success);
+      &:focus, &:focus-within {
+        --input-color: var(--color-success);
+      }
+    }
+    .advance-select-tag:has(> &) {
+      --input-color: var(--color-success);
+      &:focus, &:focus-within {
+        --input-color: var(--color-success);
+      }
+    }
+    .input-floating:has(&) {
+      &:hover {
+        @media (hover: hover) {
+          border-color: var(--color-success);
+        }
+      }
+      .input-floating-label {
+        color: var(--color-success);
+      }
+      &:focus-within, &:not(:has(input:placeholder-shown)), &:has(.input:focus) {
+        .input-floating-label {
+          color: var(--color-success);
+        }
+      }
+    }
+    .textarea-floating:has(&) {
+      .textarea-floating-label {
+        color: var(--color-success);
+      }
+      &:focus-within, &:not(:has(textarea:placeholder-shown)), &:has(.textarea:focus) {
+        .textarea-floating-label {
+          color: var(--color-success);
+        }
+      }
+    }
+    .select-floating:has(&) {
+      .select-floating-label {
+        color: var(--color-success);
+      }
+      &:focus-within, &:not(:has(select:placeholder-shown)), &:has(.select:focus) {
+        .select-floating-label {
+          color: var(--color-success);
+        }
+      }
+    }
+  }
   .checkbox {
     &.is-valid, &:has(.is-valid), .validate &:valid, .validate &:has(:valid) {
       --input-color: var(--color-success);
@@ -3151,8 +3311,17 @@
   .bg-\[url\(\.\/\/src\/images\/bg-reserve\.jpg\)\] {
     background-image: url(.//src/images/bg-reserve.jpg);
   }
+  .bg-\[url\(\.\/bg-reserve\.jpg\)\] {
+    background-image: url(./bg-reserve.jpg);
+  }
   .bg-\[url\(\.\/src\/images\/bg-reserve\.jpg\)\] {
     background-image: url(./src/images/bg-reserve.jpg);
+  }
+  .bg-\[url\(\/bg-reserve\.jpg\)\] {
+    background-image: url(/bg-reserve.jpg);
+  }
+  .bg-\[url\(\/images\/bg-reserve\.jpg\)\] {
+    background-image: url(/images/bg-reserve.jpg);
   }
   .bg-\[url\(\/src\/images\/bg-reserve\.jpg\)\] {
     background-image: url(/src/images/bg-reserve.jpg);
