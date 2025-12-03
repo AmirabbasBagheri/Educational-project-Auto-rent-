@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+@plugin "flyonui";
+@source "./node_modules/flyonui/dist/index.js";
+@source "./node_modules/flyonui/dist/accordion.js";
 
 @font-face {
     font-family: Esteedad;
@@ -37,10 +40,7 @@
 @layer utilities {
     @media (min-width: 1024px) {
         .text-stroke {
-            text-shadow: -1px 0 #0B2FA6,
-                0 1px #0B2FA6,
-                1px 0 #0B2FA6,
-                0 -1px #0B2FA6;
+            text-shadow: -1px 0 #0b2fa6, 0 1px #0b2fa6, 1px 0 #0b2fa6, 0 -1px #0b2fa6;
         }
     }
 }
