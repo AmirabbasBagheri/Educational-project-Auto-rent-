@@ -42,8 +42,24 @@
         .text-stroke {
             text-shadow: -1px 0 #0b2fa6, 0 1px #0b2fa6, 1px 0 #0b2fa6, 0 -1px #0b2fa6;
         }
+        .bgimagewhydesk {
+            background-image: url(../images/bgimage2.jpg);
+        }
     }
 }
-.bgimageforrentalcars{
+.bgimageindexmobile {
+    background-image: url(../images/image1.jpg);
+}
+.bgimageindexdesk {
+    background-image: url(../images/bg.png);
+}
+.bgimagewhymobile {
+    background-image: url(../images/image2.jpg);
+}
+
+.bgimageforrentalcars {
     background-image: url(../images/bg-reserve.jpg);
+}
+.bgimageforrentalcarsdesk {
+    background-image: url(../images/reserve-page-bg.jpg);
 }

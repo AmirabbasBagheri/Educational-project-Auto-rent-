@@ -7924,18 +7924,6 @@
     }
     background-image: linear-gradient( var(--gradient-angle, 135deg), var(--gradient-color, var(--color-neutral)) 0%, var(--darker-shade) 100% );
   }
-  .bg-\[url\(\/src\/images\/bg\.png\)\] {
-    background-image: url(/src/images/bg.png);
-  }
-  .bg-\[url\(\/src\/images\/image1\.jpg\)\] {
-    background-image: url(/src/images/image1.jpg);
-  }
-  .bg-\[url\(\/src\/images\/image2\.jpg\)\] {
-    background-image: url(/src/images/image2.jpg);
-  }
-  .bg-\[url\(\/src\/images\/reserve-page-bg\.jpg\)\] {
-    background-image: url(/src/images/reserve-page-bg.jpg);
-  }
   .skeleton-striped {
     background-image: repeating-linear-gradient( 45deg, var(--color-base-200), var(--color-base-200) 2px, var(--color-base-100) 3px, var(--color-base-100) 6px );
   }
@@ -10798,11 +10786,6 @@
       border-color: #d7d7d766;
     }
   }
-  .lg\:bg-\[url\(\/src\/images\/bgimage2\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(/src/images/bgimage2.jpg);
-    }
-  }
   .lg\:bg-none {
     @media (width >= 64rem) {
       background-image: none;
@@ -11127,10 +11110,25 @@
     .text-stroke {
       text-shadow: -1px 0 #0b2fa6, 0 1px #0b2fa6, 1px 0 #0b2fa6, 0 -1px #0b2fa6;
     }
+    .bgimagewhydesk {
+      background-image: url(../images/bgimage2.jpg);
+    }
   }
+}
+.bgimageindexmobile {
+  background-image: url(../images/image1.jpg);
+}
+.bgimageindexdesk {
+  background-image: url(../images/bg.png);
+}
+.bgimagewhymobile {
+  background-image: url(../images/image2.jpg);
 }
 .bgimageforrentalcars {
   background-image: url(../images/bg-reserve.jpg);
+}
+.bgimageforrentalcarsdesk {
+  background-image: url(../images/reserve-page-bg.jpg);
 }
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=light]:checked),[data-theme=light] {
