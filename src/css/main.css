@@ -63,3 +63,12 @@
 .bgimageforrentalcarsdesk {
     background-image: url(../images/reserve-page-bg.jpg);
 }
+.bgimageaboutus{
+        background-image: url(../images/image2.jpg);
+}
+.bgaboutuspage{
+background-image: url(../images/aboutus/service.png);
+}
+.bgfooter{
+    background-image: url(../images/footer-bg.png);
+}
