@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./src/css/output.css" />
-        <title>درباره ما</title>
+        <title>سوالات متداول</title>
     </head>
     <body class="bg-black select-none">
         <!--#region wraper -->
@@ -105,7 +105,7 @@
                 <div class="w-full h-full backdrop-grayscale-50 brightness-75"></div>
                 <!-- #region slogan-->
                 <div class="text-white/80 absolute top-8 right-1/2 translate-x-1/2">
-                    <span class="text-2xl font-semibold text-shadow-sm">درباره ما</span>
+                    <span class="text-2xl font-semibold text-shadow-sm">سوالات متداول</span>
                 </div>
                 <div class="absolute top-18 right-1/2 translate-x-1/2 text-xs text-white opacity-40"></div>
 
@@ -371,7 +371,7 @@
                     </div>
                     <!-- #endregion menu-->
                     <!-- #region Slogan-->
-                    <div class="w-[249px] h-[45px] absolute right-150 top-[183px] font-bold text-[32px] leading-[140%] text-[#FDB713] flex items-center justify-center">درباره ما</div>
+                    <div class="w-[249px] h-[45px] absolute right-150 top-[183px] font-bold text-[32px] leading-[140%] text-[#FDB713] flex items-center justify-center">سوالات ما</div>
                     <div class="w-[202px] h-[25px] flex items-center justify-center gap-1.5 absolute top-[218px] right-[619px]">
                         <p class="font-Esteedad-regular text-sm text-white leading-[180%]">اتورنت</p>
                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -380,107 +380,86 @@
                                 fill="white"
                             />
                         </svg>
-                        <p class="font-Esteedad-regular text-sm text-white leading-[180%]>">درباره ما</p>
+                        <p class="font-Esteedad-regular text-sm text-white leading-[180%]>">سوالات متداول</p>
                     </div>
                     <!-- #endregion slogan-->
                 </div>
             </div>
             <!-- #endregion desktop header-menu-banner-->
-            <!-- #region Introduction-->
-            <!--متن معرفی-->
-            <div class="lg:w-[1220px] w-[95%] h-fit lg:mt-14 mx-auto relative lg:top-0 -top-10 rounded-2xl flex flex-col lg:p-6 p-4 lg:gap-3 gap-3 bg-white lg:shadow-none shadow">
-                <div class="lg:w-[1172px] h-12 lg:block flex items-center justify-center">
-                    <p class="lg:text-2xl text-xl font-bold leading-[140%] text-[#353535]">معرفی اتورنت</p>
+            <!-- #region questions-->
+
+            <div class="lg:max-w-[1224px] w-[90%] lg:h-[459px] h-fit mt-14 mx-auto rounded-2xl lg:border-none border border-[#D7D7D7] flex gap-6 lg:p-0 p-4">
+                <div class="lg:w-[808px] w-full h-full flex flex-col lg:gap-4 gap-2">
+                    <!-- <input type="radio" name="questions" id="close-question" /> -->
+
+                    <label
+                        class="w-full lg:h-[76px] h-10 lg:rounded-2xl rounded-xl lg:border border-[#D7D7D7] lg:shadow-none shadow-xs lg:py-6 py-2 lg:px-4 px-3 flex flex-col lg:gap-6 gap-4 bg-white verflow-hidden has-checked:lg:h-[186px] has-checked:h-[120px] transition-all duration-500"
+                        for="open-question-1"
+                    >
+                        <div class="relative w-full h-6 flex lg:items-end items-center">
+                            <input type="radio" name="questions" id="open-question-1" class="peer hidden" />
+                            <img class="absolute lg:w-auto w-5 lg:h-auto h-5" src="./src/images/questions/minus-square.png" alt="" />
+                            <img class="absolute peer-checked:hidden lg:w-auto w-5 lg:h-auto h-5" src="./src/images/questions/add-square.png" alt="" />
+                            <p class="lg:mr-8 mr-6 lg:text-[16px] text-xs text-[#353535] font-medium">در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟</p>
+                        </div>
+                    </label>
+
+                    <label
+                        class="w-full lg:h-[76px] h-10 lg:rounded-2xl rounded-xl lg:border border-[#D7D7D7] lg:shadow-none shadow-xs lg:py-6 py-2 lg:px-4 px-3 flex flex-col lg:gap-6 gap-6 bg-white verflow-hidden has-checked:lg:h-[186px] has-checked:h-[140px] transition-all duration-500 overflow-hidden has-checked:gap-4"
+                        for="open-question-2"
+                    >
+                        <div class="relative w-full h-fit flex lg:items-end items-center">
+                            <input type="radio" name="questions" id="open-question-2" class="peer hidden" checked />
+                            <img class="absolute lg:w-auto w-5 lg:h-auto h-5" src="./src/images/questions/minus-square.png" alt="" />
+                            <img class="absolute peer-checked:hidden lg:w-auto w-5 lg:h-auto h-5" src="./src/images/questions/add-square.png" alt="" />
+                            <p class="lg:mr-8 mr-6 lg:text-[16px] text-xs text-[#353535] font-medium">هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟</p>
+                        </div>
+                        <div class="w-full lg:h-[107px] h-fit lg:text-[14px] text-[10px] text-justify leading-[180%] font-Esteedad-regular text-[#727272]">
+                            در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک بنزین پر تحویل مشتریان عزیز می گردد. در زمان استرداد خودرو در صورتی که خودرو به کارواش نیاز داشته و یا خودرو دارای کسر سوخت باشد هزینه آن بر عهده مشتری
+                            می باشد.
+                        </div>
+                    </label>
+
+                    <label
+                        class="w-full lg:h-[76px] h-10 lg:rounded-2xl rounded-xl lg:border border-[#D7D7D7] lg:shadow-none shadow-xs lg:py-6 py-2 lg:px-4 px-3 flex flex-col lg:gap-6 gap-4 bg-white verflow-hidden has-checked:lg:h-[186px] has-checked:h-[120px] transition-all duration-500"
+                        for="open-question-3"
+                    >
+                        <div class="relative w-full h-6 flex lg:items-end items-center">
+                            <input type="radio" name="questions" id="open-question-3" class="peer hidden" />
+                            <img class="absolute lg:w-auto w-5 lg:h-auto h-5" src="./src/images/questions/minus-square.png" alt="" />
+                            <img class="absolute peer-checked:hidden lg:w-auto w-5 lg:h-auto h-5" src="./src/images/questions/add-square.png" alt="" />
+                            <p class="lg:mr-8 mr-6 lg:text-[16px] text-xs text-[#353535] font-medium">آیا ماشین های اتورنت دارای بیمه هستند؟</p>
+                        </div>
+                    </label>
+
+                    <label
+                        class="w-full lg:h-[76px] h-10 lg:rounded-2xl rounded-xl lg:border border-[#D7D7D7] lg:shadow-none shadow-xs lg:py-6 py-2 lg:px-4 px-3 flex flex-col lg:gap-6 gap-4 bg-white verflow-hidden has-checked:lg:h-[186px] has-checked:h-[120px] transition-all duration-500"
+                        for="open-question-4"
+                    >
+                        <div class="relative w-full h-6 flex lg:items-end items-center">
+                            <input type="radio" name="questions" id="open-question-4" class="peer hidden" />
+                            <img class="absolute lg:w-auto w-5 lg:h-auto h-5" src="./src/images/questions/minus-square.png" alt="" />
+                            <img class="absolute peer-checked:hidden lg:w-auto w-5 lg:h-auto h-5" src="./src/images/questions/add-square.png" alt="" />
+                            <p class="lg:mr-8 mr-6 lg:text-[16px] text-xs text-[#353535] font-medium">محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟</p>
+                        </div>
+                    </label>
                 </div>
-                <div class="lg:w-[1172px] w-[90%] h-[3px] absolute right-6 top-[69px] flex items-center justify-center">
-                    <div class="w-full h-px bg-[#D7D7D7]"></div>
-                </div>
-                <div class="w-10 h-[3px] bg-[#FDB713] absolute top-[69px] right-6 rounded-lg"></div>
-                <div class="text-[#353535] font-Esteedad-regular lg:text-sm text-xs leading-[180%] text-justify">
-                    اتورنت با رویکرد اعتماد به مشتری، در ابتدا با ایجاد بزرگترین ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در سراسر کشور ایران و در تمامی شهرهای اصلی کشور و تمامی فرودگاه های اصلی و با هدف ارتقاء
-                    واقعی خدمات خوب و خدماتی همانندکشورهای پیــــشرفته در مــیهن عزیزمان ایران سرمایه‌گذاری نموده و این مهم با جلب همکاری سایر شرکای تجاری و جذب سرمایه تا رسیدن به هدف ایجاد‌ شبکه ای بالغ بر صد هزار خودرو و گسترش شبکه به
-                    کلیه شهرستانهای کوچک ایران ادامه خواهد یافت.مدل تـجاری اتورنت ، با محوریت اعـتماد به مشتری، امـکان اجاره خودرو با استانداردهای روز دنیا و بدون دریافت تضامین سنتی همانند چک و سفته و اسناد ملکی را فراهم می سازد.
-                </div>
+
+                <img class="hidden lg:block" src="./src/images/questions.png" alt="" />
             </div>
-            <!--سه ویژگی-->
-            <div
-                class="lg:w-[1222px] w-[95%] h-fit mx-auto lg:mt-[23px] -mt-6 flex lg:flex-row flex-col justify-between lg:gap-6 gap-3 *:bg-white *:lg:w-[35%] *:lg:h-[186px] *:h-[140px] *:rounded-2xl *:border *:border-[#D7D7D7] *:py-4 *:px-6 *:flex *:lg:flex-col *:justify-center *:items-center *:gap-2 **:gap-2"
-            >
-                <div class="">
-                    <img class="lg:w-[72px] w-[42px] lg:h-[72px] h-[42px]" src="src/images/why autorent/delivery in your location.png" alt="" />
-                    <div class="lg:w-[264px] flex flex-col justify-center items-center">
-                        <p class="leading-[140%] font-bold text-[#414141]">تحویل در محل</p>
-                        <p class="lg:w-fit font-Esteedad-regular text-xs leading-[180%] text-center text-[#757575] lg:mx-0 mx-auto">تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.</p>
-                    </div>
-                </div>
-
-                <div class="">
-                    <img class="lg:w-[72px] w-[42px] lg:h-[72px] h-[42px]" src="src/images/why autorent/support 24h.png" alt="" />
-
-                    <div class="lg:w-[264px] flex flex-col justify-center items-center">
-                        <p class="leading-[140%] font-bold text-[#414141]">پشتیبانی 24 ساعته</p>
-                        <p class="lg:w-fit w-[95%] font-Esteedad-regular text-xs leading-[180%] text-center text-[#757575] lg:mx-0 mx-auto">کارشناسان مادر هر زمان و مکان پاسخگوی سوالات شما خواهند بود.</p>
-                    </div>
-                </div>
-
-                <div class="">
-                    <img class="lg:w-[72px] w-[42px] lg:h-[72px] h-[42px]" src="src/images/why autorent/cool price.png" alt="" />
-                    <div class="lg:w-[264px] flex flex-col justify-center items-center">
-                        <p class="leading-[140%] font-bold text-[#414141]">قیمت مناسب</p>
-                        <p class="lg:w-fit w-[95%] font-Esteedad-regular text-xs leading-[180%] text-center text-[#757575] lg:mx-0 mx-auto">هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.</p>
-                    </div>
-                </div>
+            <!-- #endregion questions-->
+            <!-- #region car logos-->
+            <div class="lg:w-full lg:flex opacity-35 lg:gap-18 items-center justify-center lg: w-[95%] lg:mt-14 mx-auto grid grid-cols-5 lg:mr-0 mr-4">
+                <img class="lg:w-fit w-15" src="src/images/car logos/KIA (2).png" alt="" />
+                <img class="lg:w-fit w-15" src="src/images/car logos/Toyota.png" alt="" />
+                <img class="lg:w-fit w-15" src="src/images/car logos/Nissan.png" alt="" />
+                <img class="lg:w-fit w-15" src="src/images/car logos/Hyundai.png" alt="" />
+                <img class="lg:w-fit w-15" src="src/images/car logos/Honda.png" alt="" />
+                <img class="lg:w-fit w-15" src="src/images/car logos/Marcedes.png" alt="" />
+                <img class="lg:w-fit w-15" src="src/images/car logos/lexus-logo.png" alt="" />
+                <img class="lg:w-fit w-15" src="src/images/car logos/BMW.png" alt="" />
             </div>
-
-            <div class="lg:w-[1220px] w-[95%] h-fit lg:mt-5 mt-4 mx-auto relative rounded-2xl flex flex-col lg:p-6 p-4 lg:gap-3 gap-3 bg-white lg:shadow-none shadow">
-                <div class="lg:w-[1172px] h-12 lg:block flex items-center justify-center">
-                    <p class="lg:text-2xl text-[16px] font-bold leading-[140%] text-[#353535]">شبکه نمایندگان و شرکتهای اجاره خودروی همکار</p>
-                </div>
-                <div class="lg:w-[1172px] w-[90%] h-[3px] absolute right-6 top-[69px] flex items-center justify-center">
-                    <div class="w-full h-px bg-[#D7D7D7]"></div>
-                </div>
-                <div class="w-10 h-[3px] bg-[#FDB713] absolute top-[69px] right-6 rounded-lg"></div>
-                <div class="text-[#353535] font-Esteedad-regular lg:text-sm text-xs leading-[180%]">
-                    <p>
-                        اتورنت دارای شبکه ای شامل ایستگاه های داخل شهری و فرودگاهی می باشد که این ایستگاه ها توسط نمایندگان و شرکای تجاری نگهداری و مدیریت می‌گردند، افرادی که علاقمند به سرمایه‌گذاری و همکاری با ناواران می‌باشند می‌توانند
-                        بصورت نمایندگی یا همکار تجاری فعالیت نمایند ، در هر صورت این اشخاص می بایست دوره های آموزش را طبق استاندارد بین‌المللی گذرانده و تحت استاندارد و کیفیت مورد نیاز ناواران شروع به فعالیت نمایند. 
-                    </p>
-                    <p>
-                         دارا بودن سرمایه مورد نیاز جهت خرید حداقل تعداد خودروهای صفر کیلومتر در محدوده تحت پوشش و قبل از هرچیز اهمیت به اصل خدمت به هموطنان و رضایت مشتریان از شرایط اصلی اعطای نمایندگی می با نمایندگان دارای اپلیکیشن موبایل
-                        و سیستم آنلاین مرتبط با سامانه مدیریت مرکزی می باشند، و تمامی امور رزرو و محاسبات مرتبط بصورت خودکار انجام پذیرفته و نمایندگان از پشتیبانی کامل شرکت مرکزی در تمامی مراحل برخوردار خواهند بود.
-                    </p>
-                </div>
-            </div>
-
-            <div
-                class="lg:w-[1220px] w-[95%] lg:h-[591px] h-fit lg:p-0 p-4 lg:block flex flex-col gap-4 items-center mx-auto lg:mt-[22px] mt-5 lg:relative *:lg:absolute lg:bg-none rounded-2xl lg:border-0 border-2 border-white lg:shadow-none shadow"
-            >
-                <div class="hidden lg:block lg:w-full w-[90%] lg:h-[529px] h-full bgaboutuspage bg-cover brightness-35 invert-2 rounded-2xl bg-yellow-300 static"></div>
-
-                <div class="lg:w-[1172px] w-fit lg:h-[45px] lg:text-[32px] text-[20px] leading-[140%] top-[279px] right-[24.5px] flex justify-center lg:text-white text-[#353535] font-bold">شبکه امدادی و تعمیرات خودرو</div>
-
-                <div class="lg:w-[937px] w-[95%] lg:text-sm text-xs font-Esteedad-regular leading-[180%] lg:text-center text-justify top-[340px] lg:right-[141px] lg:text-white text-[#353535]">
-                    شبکه تحت پوشش اتورنت که با سرمایه‌گذاری و همکاری شرکای تجاری در خدمت مشتریان قرار گرفته است شامل 2000 نقطه در سراسر کشور ایــران و مناطق آزاد تجاری مـی‌باشد که باعث شده سرعت امداد رسانی در هر نقطه ایران به کمتر از 30
-                    دقیقه کاهش یابد، امدادگران و خودروهای امدادی همگی مجهز به تجهیزات جهت رفع معایب و تعمیرات ساده بوده و بسیاری از مشکلات در همین مرحله به سادگی رفع می گردند.
-                </div>
-
-                <div class="top-[449px] right-[104px] flex lg:flex-row flex-col lg:gap-6 gap-4 *:lg:w-[494px] *:lg:h-[142px] *:rounded-2xl *:lg:border *:border-[#C2C2C2] *:py-3 *:px-6 *:flex *:flex-col *:items-center *:gap-2.5 *:bg-white">
-                    <div>
-                        <p class="text-[#0C0C0C] lg:text-[16px] text-sm font-bold underline decoration-2 decoration-[#FDB713] underline-offset-8">خدمات شبانه روزی</p>
-                        <p class="text-[#353535] font-Esteedad-regular text-xs text-justify leading-[180%]">
-                            اتورنت در تــمامی بخش‌های اصـلی از جـمله مرکز تماس مشتریان و خدمات امدادی بصورت دائمی تمامی روزهای هفته و 24 ساعته فعال است، بیشتر ایستگاه های کاری تحویل خودرو نیز بصورت 24 ساعته می‌باشند ، فقط واحد اداری و فروش
-                            اجاره های بلند مدت در ساعات اداری و روزهای اداری فعال می باشند.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="text-[#0C0C0C] lg:text-[16px] text-sm font-bold underline decoration-2 decoration-[#FDB713] underline-offset-8">خدمات شبانه روزی</p>
-                        <p class="text-[#353535] font-Esteedad-regular text-sm text-justify leading-[180%]">
-                            با توجه به تعداد خودرو های موجود در اتورنت امکان ارائه خودروی جایگزین در خرابی ها و تعمیرات طولانی مدت که بصورت امدادی برطرف نگردند ، در هر نقطه از ایران میسر می باشد.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- #endregion Introduction-->
+            <!-- #endregion car logos-->
             <!-- #region footer-->
             <div class="bgfooter bg-cover lg:max-w-[1224px] w-full lg:h-[432px] h-fit mx-auto">
                 <div class="bg-black/75 lg:max-w-[1224px] w-full lg:h-[432px] h-fit lg:mt-20 mt-6 mx-auto lg:pt-12 lg:px-6 p-4 flex flex-col items-center gap-4 lg:rounded-2xl shadow shadow-black/35">
@@ -586,7 +565,7 @@
                                     اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
                                 </p>
                             </div>
-                            <div class="flex lg:flex-col lg:gap-6 gap-4 text-white/90 text-sm text-xs lg:no-underline underline underline-offset-4 decoration-gray-400 lg:mx-0 mx-auto">
+                            <div class="flex lg:flex-col lg:gap-6 gap-4 text-white/90 lg:text-sm text-xs lg:no-underline underline underline-offset-4 decoration-gray-400 lg:mx-0 mx-auto">
                                 <a href="">دسترسی آسان</a>
                                 <a href="questions.html">سوالات متداول</a>
                                 <a href="">تماس با ما</a>
